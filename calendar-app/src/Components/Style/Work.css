@@ -1,0 +1,51 @@
+.card{
+    margin: 20px;
+    background-color: 	#D3C5E5;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 10px 0px 20px #735DA5;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+
+.red{
+    color: rgb(237, 12, 12);
+    font-weight: bold;
+}
+.card-text{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-subtitle{
+    font-size: 13px;
+    align-items: center;
+}
+
+ul li{
+    color: black;
+    font-weight:bold;
+}
+
+.btn-work{
+    background-color: #735DA5;
+}
+
+.fa-solid{
+    font-size: 12px;
+    padding: 5px;
+}
+
+.card-footer{
+    text-align: center;
+    box-shadow: 10px 10px 20px #735DA5;
+}

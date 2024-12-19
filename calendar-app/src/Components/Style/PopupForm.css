@@ -1,0 +1,119 @@
+/* Default styles (for desktops/larger screens) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 400px; /* Desktop width */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button-pop {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button {
+  background-color: #2196f3;
+  color: white;
+  margin: 5px;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  margin-top: 10px;
+}
+
+/* 📱 Small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%; /* Modal takes 90% of screen width */
+    padding: 15px; /* Smaller padding */
+  }
+
+  h2 {
+    font-size: 18px; /* Reduce heading size */
+  }
+
+  .close-button {
+    top: 10px;
+    right: 10px;
+    font-size: 20px; /* Slightly smaller close button */
+  }
+
+  input, textarea {
+    padding: 10px; /* Increase input padding for better touch experience */
+  }
+
+  button-pop {
+    font-size: 14px; /* Smaller button font */
+    padding: 8px 10px; /* Smaller button padding */
+  }
+}
+
+/* 📱 Extra small devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%; /* Modal takes 95% of screen width */
+    padding: 10px; /* Reduce padding even more */
+  }
+
+  h2 {
+    font-size: 16px; /* Reduce heading size */
+  }
+
+  .close-button {
+    top: 8px;
+    right: 8px;
+    font-size: 18px; /* Even smaller close button */
+  }
+
+  input, textarea {
+    padding: 8px; /* Input padding */
+  }
+
+  button-pop {
+    font-size: 12px; /* Smaller button font */
+    padding: 6px 8px; /* Smaller button padding */
+  }
+}
